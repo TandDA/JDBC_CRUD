@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbchangelog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/DevSkillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SpecialtyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/DevSkill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDevSkillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DevSkillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DeveloperRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/GenericRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/SkillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/SpecialtyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/AppView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/DevSkillView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/DeveloperView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/SkillView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/SpecialtyView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDevSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDevSkillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

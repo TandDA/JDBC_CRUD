@@ -8,13 +8,20 @@ public class DatabaseContext {
     private static final String USER = "root";
     private static final String PASSWORD = "password711";
 
-    public Connection connection = null;
-    public Statement statement = null;
+    private static DatabaseContext databaseContext;
+    public Statement statement;
 
-    public  DatabaseContext(){
+    public static synchronized  DatabaseContext getDatabaseContext(){
+        if(databaseContext == null){
+            databaseContext = new DatabaseContext();
+        }
+        return databaseContext;
+    }
+
+    private DatabaseContext(){
         try {
             Class.forName(JDBC_DRIVER);
-            connection = DriverManager.getConnection(DATABASE_URL,USER,PASSWORD);
+            Connection connection = DriverManager.getConnection(DATABASE_URL,USER,PASSWORD);
             statement = connection.createStatement();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -22,12 +29,5 @@ public class DatabaseContext {
             throw new RuntimeException(e);
         }
     }
-    public void  CloseConnection(){
-        try {
-            statement.close();
-            connection.close();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
+
 }

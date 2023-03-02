@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class AppRunner {
     private  static void InitDB() throws SQLException {
-        DatabaseContext databaseContext = new DatabaseContext();
+        DatabaseContext databaseContext = DatabaseContext.getDatabaseContext();
         ResultSet resultSet;
         resultSet = databaseContext.statement.executeQuery("SELECT * FROM taskDB.status;");
 
@@ -19,7 +19,6 @@ public class AppRunner {
         if(col == 0){
             databaseContext.statement.executeUpdate("INSERT INTO status(name) value(\"ACTIVE\"),(\"DELETED\");");
         }
-        databaseContext.CloseConnection();
     }
 
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class DatabaseSpecialtyRepository implements SpecialtyRepository {
-    DatabaseContext dbContext = new DatabaseContext();
+    DatabaseContext dbContext = DatabaseContext.getDatabaseContext();
     @Override
     public Specialty getById(Integer id) {
         String sql = "SELECT * FROM specialty WHERE id="+id;

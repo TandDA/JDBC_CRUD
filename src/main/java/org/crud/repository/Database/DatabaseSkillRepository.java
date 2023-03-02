@@ -1,7 +1,6 @@
 package org.crud.repository.Database;
 
 import org.crud.model.Skill;
-import org.crud.model.Specialty;
 import org.crud.repository.SkillRepository;
 
 import java.sql.ResultSet;
@@ -9,7 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class DatabaseSkillRepository implements SkillRepository {
-    DatabaseContext dbContext = new DatabaseContext();
+    DatabaseContext dbContext = DatabaseContext.getDatabaseContext();
     @Override
     public Skill getById(Integer id) {
         String sql = "SELECT * FROM skill WHERE id="+id;

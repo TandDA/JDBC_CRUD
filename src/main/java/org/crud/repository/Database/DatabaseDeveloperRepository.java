@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class DatabaseDeveloperRepository implements DeveloperRepository {
-    DatabaseContext dbContext = new DatabaseContext();
+    DatabaseContext dbContext = DatabaseContext.getDatabaseContext();
     @Override
     public Developer getById(Integer id) {
         return null;

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class DatabaseDevSkillRepository implements DevSkillRepository {
-    DatabaseContext dbContext = new DatabaseContext();
+    DatabaseContext dbContext = DatabaseContext.getDatabaseContext();
     @Override
     public DevSkill getById(DevSkill integer) {
         return null;
