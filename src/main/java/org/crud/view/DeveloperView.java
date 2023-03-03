@@ -86,4 +86,12 @@ public class DeveloperView {
 
         return currentDeveloperSkills;
     }
+
+    public void findDeveloperById() {
+        System.out.println("Введите id Developer для поиска");
+        Integer id = scanner.nextInt();
+
+        Developer developer = developerController.read(id);
+        System.out.println(developer);
+    }
 }

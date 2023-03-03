@@ -42,4 +42,12 @@ public class SpecialtyView {
     public void getAllSpeciality(){
         specialtyController.readAll();
     }
+
+    public void findSpecialtyById() {
+        System.out.println("Введите id Specialty для поиска");
+        Integer id = scanner.nextInt();
+
+        Specialty specialty = specialtyController.read(id);
+        System.out.println(specialty);
+    }
 }

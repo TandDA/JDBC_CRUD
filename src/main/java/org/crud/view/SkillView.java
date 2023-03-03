@@ -3,6 +3,7 @@ package org.crud.view;
 import org.crud.controller.SkillController;
 import org.crud.model.DevSkill;
 import org.crud.model.Skill;
+import org.crud.model.Specialty;
 
 import java.util.Scanner;
 
@@ -42,4 +43,11 @@ public class  SkillView {
         skillController.readAll();
     }
 
+    public void findSkillById() {
+        System.out.println("Введите id Skill для поиска");
+        Integer id = scanner.nextInt();
+
+        Skill skill = skillController.read(id);
+        System.out.println(skill);
+    }
 }

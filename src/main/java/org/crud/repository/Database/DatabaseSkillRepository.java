@@ -12,14 +12,16 @@ public class DatabaseSkillRepository implements SkillRepository {
     @Override
     public Skill getById(Integer id) {
         String sql = "SELECT * FROM skill WHERE id="+id;
-        ResultSet specialtySet;
+        ResultSet skillSet;
         String name;
-        Skill specialty;
+        Skill skill;
         try {
-            specialtySet = dbContext.statement.executeQuery(sql);
-            name = specialtySet.getString("name");
-            specialty = new Skill(id,name);
-            return specialty;
+            skillSet = dbContext.statement.executeQuery(sql);
+            if(!skillSet.next())
+                return null;
+            name = skillSet.getString("name");
+            skill = new Skill(id,name);
+            return skill;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

@@ -17,7 +17,8 @@ public class DatabaseSpecialtyRepository implements SpecialtyRepository {
         Specialty specialty;
         try {
             specialtySet = dbContext.statement.executeQuery(sql);
-            specialtySet.next();
+            if(!specialtySet.next())
+                return null;
             name = specialtySet.getString("name");
             specialty = new Specialty(id,name);
             return specialty;

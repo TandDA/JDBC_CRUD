@@ -6,12 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDevSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDevSkillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/AppView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/AppView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/DeveloperView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/DeveloperView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/SkillView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/SkillView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/SpecialtyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/SpecialtyView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java Projects/JDBC_CRUD/src/main/java/org/crud/controller&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Tom/IdeaProjects/JDBC_CRUD",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\Java Projects\JDBC_CRUD\src\main\java\org\crud\controller" />
@@ -63,6 +65,19 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.crud.controller" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
