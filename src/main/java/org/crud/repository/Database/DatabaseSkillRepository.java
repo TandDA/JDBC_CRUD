@@ -1,10 +1,12 @@
 package org.crud.repository.Database;
 
 import org.crud.model.Skill;
+import org.crud.model.Specialty;
 import org.crud.repository.SkillRepository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseSkillRepository implements SkillRepository {
@@ -29,7 +31,19 @@ public class DatabaseSkillRepository implements SkillRepository {
 
     @Override
     public List<Skill> getAll() {
-        return null;
+        String sql = "SELECT * FROM skill";
+        List<Skill> skillList = new ArrayList<>();
+        try {
+            ResultSet resultSet = dbContext.statement.executeQuery(sql);
+            while (resultSet.next()){
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                skillList.add(new Skill(id,name));
+            }
+            return skillList;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

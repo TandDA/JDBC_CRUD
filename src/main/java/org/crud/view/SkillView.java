@@ -5,6 +5,7 @@ import org.crud.model.DevSkill;
 import org.crud.model.Skill;
 import org.crud.model.Specialty;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class  SkillView {
@@ -40,7 +41,11 @@ public class  SkillView {
     }
 
     public void getAllSkill(){
-        skillController.readAll();
+        List<Skill> specialties = skillController.readAll();
+        for (Skill item: specialties) {
+            System.out.println(item);
+
+        }
     }
 
     public void findSkillById() {

@@ -67,7 +67,28 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
 
     @Override
     public List<Developer> getAll() {
-        return null;
+        String sql = "SELECT * FROM developer";
+        List<Developer> developerList = new ArrayList<>();
+        ResultSet resultSet;
+        try {
+            resultSet = dbContext.statement.executeQuery(sql);
+            while (resultSet.next()){
+                int id = resultSet.getInt("id");
+                String firstName = resultSet.getString("firstName");
+                String lastName = resultSet.getString("lastName");
+                int specialtyId = resultSet.getInt("specialtyId");
+
+                developerList.add(new Developer(id,firstName,lastName, null, null));
+            }
+            for (Developer dev: developerList) {
+                List<Skill> skills = skillRepository.getAll().stream().filter(s -> s.getId() == dev.getId()).toList();
+                dev.setSkills(skills);
+
+            }
+            return developerList;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

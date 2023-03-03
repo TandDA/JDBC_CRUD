@@ -67,6 +67,7 @@ public class AppView {
         System.out.println("2) обновить Skill");
         System.out.println("3) удалить Skill");
         System.out.println("4) найти Skill по id");
+        System.out.println("5) Вывести все записи");
 
         int num = scanner.nextInt();
         switch (num){
@@ -82,6 +83,8 @@ public class AppView {
             case 4:
                 skillView.findSkillById();
                 break;
+            case 5:
+                skillView.getAllSkill();
             default:
                 mainMenu();
                 break;
@@ -94,6 +97,7 @@ public class AppView {
         System.out.println("2) обновить Developer");
         System.out.println("3) удалить Developer");
         System.out.println("4) найти Developer по id");
+        System.out.println("5) Вывести все записи");
 
         int num = scanner.nextInt();
         switch (num){
@@ -109,6 +113,8 @@ public class AppView {
             case 4:
                 developerView.findDeveloperById();
                 break;
+            case 5:
+                developerView.getAllDeveloper();
             default:
                 mainMenu();
                 break;
@@ -121,6 +127,7 @@ public class AppView {
         System.out.println("2) обновить Specialty");
         System.out.println("3) удалить Specialty");
         System.out.println("4) найти Specialty по id");
+        System.out.println("5) Вывести все записи");
 
         int num = scanner.nextInt();
         switch (num){
@@ -136,6 +143,8 @@ public class AppView {
             case 4:
                 specialtyView.findSpecialtyById();
                 break;
+            case 5:
+                specialtyView.getAllSpeciality();
             default:
                 mainMenu();
                 break;

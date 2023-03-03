@@ -71,7 +71,11 @@ public class DeveloperView {
     }
 
     public void getAllDeveloper(){
-        developerController.readAll();
+        List<Developer> developers = developerController.readAll();
+        for (Developer item: developers) {
+            System.out.println(item);
+
+        }
     }
 
     public List<Skill> skillRead(){

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="">
+    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Реализован метод getById для всех сущностей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" afterDir="false" />
@@ -88,6 +87,14 @@
       <option name="presentableId" value="Default" />
       <updated>1676878279611</updated>
     </task>
+    <task id="LOCAL-00001" summary="Реализован метод getById для всех сущностей">
+      <created>1677844883657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677844883657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +107,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Реализован метод getById для всех сущностей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализован метод getById для всех сущностей" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,6 +4,7 @@ import org.crud.controller.SpecialtyController;
 import org.crud.model.Specialty;
 
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.Scanner;
 
 public class SpecialtyView {
@@ -40,7 +41,11 @@ public class SpecialtyView {
     }
 
     public void getAllSpeciality(){
-        specialtyController.readAll();
+        List<Specialty> specialties = specialtyController.readAll();
+        for (Specialty spec: specialties) {
+            System.out.println(spec);
+
+        }
     }
 
     public void findSpecialtyById() {

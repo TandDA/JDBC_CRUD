@@ -5,6 +5,7 @@ import org.crud.repository.SpecialtyRepository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseSpecialtyRepository implements SpecialtyRepository {
@@ -28,8 +29,20 @@ public class DatabaseSpecialtyRepository implements SpecialtyRepository {
     }
 
     @Override
-    public List<Specialty> getAll() {
-        return null;
+    public List<Specialty> getAll()  {
+        String sql = "SELECT * FROM specialty";
+        List<Specialty> specialtyList = new ArrayList<>();
+        try {
+            ResultSet resultSet = dbContext.statement.executeQuery(sql);
+            while (resultSet.next()){
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                specialtyList.add(new Specialty(id,name));
+            }
+            return specialtyList;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
