@@ -93,18 +93,30 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
 
     @Override
     public Developer save(Developer developer) {
-        String sql = String.format("INSERT INTO developer(firstName,lastName,specialtyId) values(\"%s\",\"%s\",%s)",
+        String sql1 = String.format("INSERT INTO developer(firstName,lastName,specialtyId) values(\"%s\",\"%s\",%s)",
                 developer.getFirstName(),
                 developer.getLastName(),
                 developer.getSpecialty().getId()
         );
         int updateNumber = 0;
         try {
-            updateNumber = dbContext.statement.executeUpdate(sql);
+            updateNumber = dbContext.statement.executeUpdate(sql1);
         } catch (SQLException e) {
             System.out.println("Произошла ошибка");
         }
         System.out.println("Успешно. Произошло " + updateNumber + " изменение");
+
+        for (Skill skill:developer.getSkills()) {
+            String sql2 = String.format("INSERT INTO devSkill(devId,skillId) values(%s,%s)",
+                    developer.getId(),
+                    skill.getId()
+            );
+            try {
+                dbContext.statement.executeUpdate(sql2);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
         return developer;
     }
 

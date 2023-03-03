@@ -7,7 +7,6 @@ public class AppView {
     SkillView skillView = new SkillView();
     SpecialtyView specialtyView = new SpecialtyView();
     DeveloperView developerView = new DeveloperView();
-    DevSkillView devSkillView = new DevSkillView();
     Scanner scanner = new Scanner(System.in);
     public void runApp(){
         while(true)
@@ -20,7 +19,6 @@ public class AppView {
         System.out.println("1) Управлять Skill");
         System.out.println("2) Управлять Developer");
         System.out.println("3) Управлять Specialty");
-        System.out.println("4) Управлять devSkill");
 
         int num = scanner.nextInt();
         switch (num){
@@ -33,32 +31,10 @@ public class AppView {
             case 3:
                 specialtyMenu();
                 break;
-            case 4:
-                devSkillMenu();
             default:
                 mainMenu();
                 break;
         }
-    }
-
-    private void devSkillMenu() {
-        System.out.println("Введите номер действия");
-        System.out.println("1) новый devSkill");
-        System.out.println("2) удалить devSkill");
-
-        int num = scanner.nextInt();
-        switch (num){
-            case 1:
-                devSkillView.writeNewDevSkill();
-                break;
-            case 2:
-                devSkillView.deleteDevSkill();
-                break;
-            default:
-                mainMenu();
-                break;
-        }
-        mainMenu();
     }
 
     private  void skillMenu(){

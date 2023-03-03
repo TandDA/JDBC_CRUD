@@ -1,7 +1,6 @@
 package org.crud.view;
 
 import org.crud.controller.SkillController;
-import org.crud.model.DevSkill;
 import org.crud.model.Skill;
 import org.crud.model.Specialty;
 

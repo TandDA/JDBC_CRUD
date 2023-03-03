@@ -1,11 +1,8 @@
 package org.crud.controller;
 
-import org.crud.model.DevSkill;
 import org.crud.model.Skill;
 import org.crud.repository.Database.DatabaseContext;
-import org.crud.repository.Database.DatabaseDevSkillRepository;
 import org.crud.repository.Database.DatabaseSkillRepository;
-import org.crud.repository.DevSkillRepository;
 import org.crud.repository.SkillRepository;
 import org.crud.repository.Database.DatabaseSpecialtyRepository;
 
@@ -14,7 +11,6 @@ import java.util.List;
 
 public class SkillController {
     private SkillRepository skillRepository = new DatabaseSkillRepository();
-    private DevSkillRepository devSkillRepository = new DatabaseDevSkillRepository();
 
     public Skill create(Skill skill){
         skillRepository.save(skill);
@@ -36,8 +32,4 @@ public class SkillController {
         skillRepository.deleteById(id);
     }
 
-    public void linkSkill(DevSkill devSkill) {
-
-        devSkillRepository.save(devSkill);
-    }
 }
