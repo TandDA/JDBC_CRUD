@@ -1,35 +1,33 @@
 package org.crud.controller;
 
 import org.crud.model.Skill;
-import org.crud.repository.Database.DatabaseContext;
 import org.crud.repository.Database.DatabaseSkillRepository;
 import org.crud.repository.SkillRepository;
-import org.crud.repository.Database.DatabaseSpecialtyRepository;
+import org.crud.service.SkillService;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class SkillController {
     private SkillRepository skillRepository = new DatabaseSkillRepository();
+    private SkillService skillService = new SkillService(skillRepository);
 
     public Skill create(Skill skill){
-        skillRepository.save(skill);
-        return skill;
+        return skillService.save(skill);
     }
     public Skill read(Integer id){
-        return skillRepository.getById(id);
+        return skillService.getById(id);
     }
 
     public List<Skill> readAll(){
-        return skillRepository.getAll();
+        return skillService.getAll();
     }
 
     public void update(Skill skill){
-        skillRepository.update(skill);
+        skillService.update(skill);
     }
 
     public void delete(Integer id){
-        skillRepository.deleteById(id);
+        skillService.deleteById(id);
     }
 
 }

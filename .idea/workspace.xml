@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Реализован метод getById для всех сущностей">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/service/DeveloperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/service/SkillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/service/SpecialtyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Сервисы для всех сущностей">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677844883657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сервисы для всех сущностей">
+      <created>1678290077380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678290077380</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Реализован метод getById для всех сущностей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализован метод getById для всех сущностей" />
+    <MESSAGE value="Сервисы для всех сущностей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сервисы для всех сущностей" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
