@@ -32,6 +32,11 @@
             <version>5.1.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-mysql</artifactId>
+            <version> 9.8.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -39,6 +44,11 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>9.8.1</version>
+                <configuration>
+                    <user>root</user>
+                    <password>password711</password>
+                    <url>jdbc:mysql://localhost:3306/taskDB?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=CONVERT_TO_NULL&amp;serverTimezone=GMT</url>
+                </configuration>
             </plugin>
         </plugins>
     </build>
