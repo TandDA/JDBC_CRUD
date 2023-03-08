@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Сервисы для всех сущностей">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" afterDir="false" />
+    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Сервисы теперь между контроллерами и репозиторями">
+      <change afterPath="$PROJECT_DIR$/FlywayConfig.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrations/V1_1_0__init_migration.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -122,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678290077380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Сервисы теперь между контроллерами и репозиторями">
+      <created>1678292374639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678292374639</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +144,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HibernateCRUD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -139,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Реализован метод getById для всех сущностей" />
     <MESSAGE value="Сервисы для всех сущностей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сервисы для всех сущностей" />
+    <MESSAGE value="Сервисы теперь между контроллерами и репозиторями" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сервисы теперь между контроллерами и репозиторями" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
