@@ -1,13 +1,25 @@
 package org.crud.model;
 
-import java.util.List;
+import jakarta.persistence.*;
 
+import java.util.List;
+import java.util.Set;
+
+@Entity
+@Table(name = "developer")
 public class Developer{
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private int id;
+    @Column(name = "firstName")
     private String firstName;
+    @Column(name = "lastName")
     private String lastName;
-    List<Skill> skills;
+    Set skills;
     Specialty specialty;
+    @Column(name = "statusId")
+    @Enumerated(EnumType.ORDINAL)
     private Status status = Status.ACTIVE;
 
     public Integer getId() {
@@ -22,7 +34,7 @@ public class Developer{
         return lastName;
     }
 
-    public List<Skill> getSkills() {
+    public Set getSkills() {
         return skills;
     }
 
@@ -31,7 +43,7 @@ public class Developer{
 
     };
 
-    public Developer(int id, String firstName, String lastName, List<Skill> skills, Specialty specialty) {
+    public Developer(int id, String firstName, String lastName, Set skills, Specialty specialty) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -52,7 +64,7 @@ public class Developer{
         this.lastName = lastName;
     }
 
-    public void setSkills(List<Skill> skill) {
+    public void setSkills(Set skill) {
         this.skills = skill;
     }
 

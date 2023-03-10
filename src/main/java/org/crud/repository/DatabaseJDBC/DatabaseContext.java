@@ -1,4 +1,4 @@
-package org.crud.repository.Database;
+package org.crud.repository.DatabaseJDBC;
 
 import java.sql.*;
 

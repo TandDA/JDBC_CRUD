@@ -2,6 +2,7 @@ package org.crud.view;
 
 import org.crud.controller.SpecialtyController;
 import org.crud.model.Specialty;
+import org.crud.model.Status;
 
 import java.io.InputStreamReader;
 import java.util.List;
@@ -17,7 +18,8 @@ public class SpecialtyView {
         Specialty specialtyToSave = new Specialty();
         System.out.println("Введите название Specialty");
         String nameSpecialty = scanner.nextLine();
-        specialtyToSave.setName(nameSpecialty);
+        specialtyToSave.setSpecName(nameSpecialty);
+        specialtyToSave.setStatus(Status.ACTIVE);
 
         specialtyController.create(specialtyToSave);
 

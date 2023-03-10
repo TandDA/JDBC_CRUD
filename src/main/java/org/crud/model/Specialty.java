@@ -1,15 +1,25 @@
 package org.crud.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "specialty")
 public class Specialty {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "name")
     private String specName;
+    @Column(name = "statusId")
+    @Enumerated(EnumType.ORDINAL)
     private Status status;
 
     public Integer getId() {
         return id;
     }
 
-    public String getName() {
+    public String getSpecName() {
         return specName;
     }
 
@@ -34,7 +44,7 @@ public class Specialty {
     }
 
 
-    public void setName(String name) {
+    public void setSpecName(String name) {
         this.specName = name;
     }
 

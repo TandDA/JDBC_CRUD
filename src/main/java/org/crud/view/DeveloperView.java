@@ -7,9 +7,7 @@ import org.crud.model.Developer;
 import org.crud.model.Skill;
 import org.crud.model.Specialty;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class DeveloperView {
     Scanner scanner;
@@ -38,7 +36,7 @@ public class DeveloperView {
 
         System.out.println("Сколько skill'ов у разроботчика?");
         int skillCount = Integer.parseInt(scanner.nextLine());
-        List<Skill> skillList = new ArrayList<>();
+        Set skillList = new HashSet();
         for (int i = 0;i < skillCount;i++){
             System.out.println("Введите id " + i + " skill:");
             int skillId = Integer.parseInt(scanner.nextLine());

@@ -1,14 +1,15 @@
 package org.crud.controller;
 
 import org.crud.model.Specialty;
+import org.crud.repository.DatabaseHibernate.HibernateSpecialtyRepository;
 import org.crud.repository.SpecialtyRepository;
-import org.crud.repository.Database.DatabaseSpecialtyRepository;
+import org.crud.repository.DatabaseJDBC.DatabaseSpecialtyRepository;
 import org.crud.service.SpecialtyService;
 
 import java.util.List;
 
 public class SpecialtyController {
-    private SpecialtyRepository specialtyRepository = new DatabaseSpecialtyRepository();
+    private SpecialtyRepository specialtyRepository = new HibernateSpecialtyRepository();
     private SpecialtyService specialtyService = new SpecialtyService(specialtyRepository);
     public Specialty create(Specialty specialty){
         specialtyService.save(specialty);

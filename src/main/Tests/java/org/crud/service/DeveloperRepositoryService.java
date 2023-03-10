@@ -2,8 +2,8 @@ package org.crud.service;
 
 import org.crud.model.Developer;
 import org.crud.model.Specialty;
-import org.crud.repository.Database.DatabaseDeveloperRepository;
-import org.crud.repository.Database.DatabaseSpecialtyRepository;
+import org.crud.repository.DatabaseJDBC.DatabaseDeveloperRepository;
+import org.crud.repository.DatabaseJDBC.DatabaseSpecialtyRepository;
 import org.crud.repository.DeveloperRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

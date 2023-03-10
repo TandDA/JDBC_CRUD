@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Сервисы для всех сущностей">
-      <change afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateDeveloperRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateSkillRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateSpecialtyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/developer.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/skill.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/specialty.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/DeveloperRepositoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/DeveloperRepositoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SkillRepositoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SkillRepositoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/AppRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/DeveloperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SkillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/controller/SpecialtyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/controller/SpecialtyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Specialty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Specialty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseJDBC/DatabaseContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseJDBC/DatabaseDeveloperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSkillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseJDBC/DatabaseSkillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/Database/DatabaseSpecialtyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseJDBC/DatabaseSpecialtyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/DeveloperView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/DeveloperView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/view/SpecialtyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/view/SpecialtyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init_migration.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init_migration.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +59,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LzeKu6tJQwsdDivAQmSGXfhRdP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,20 +69,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java Projects/JDBC_CRUD/src/main/resources/db/migration&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "D:/Projects/Java Projects/JDBC_CRUD/src/main/resources/db/migration",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\Java Projects\JDBC_CRUD\src\main\resources\db\migration" />
@@ -67,6 +92,7 @@
       <recent name="D:\Projects\Java Projects\JDBC_CRUD\src\main\java\org\crud\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Java Projects\JDBC_CRUD\src\main\resources" />
       <recent name="D:\Projects\Java Projects\JDBC_CRUD" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -85,6 +111,17 @@
       <module name="JDBC_CRUD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -1,14 +1,15 @@
 package org.crud.controller;
 
 import org.crud.model.Developer;
+import org.crud.repository.DatabaseHibernate.HibernateDeveloperRepository;
 import org.crud.repository.DeveloperRepository;
-import org.crud.repository.Database.DatabaseDeveloperRepository;
+import org.crud.repository.DatabaseJDBC.DatabaseDeveloperRepository;
 import org.crud.service.DeveloperService;
 
 import java.util.List;
 
 public class DeveloperController{
-    private DeveloperRepository developerRepository = new DatabaseDeveloperRepository();
+    private DeveloperRepository developerRepository = new HibernateDeveloperRepository();
     private DeveloperService developerService = new DeveloperService(developerRepository);
 
     public Developer create(Developer developer) {

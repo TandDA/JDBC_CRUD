@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.crud.model.Developer" table="developer">
+        <meta attribute="class-description">
+            This class contains specialties details.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="firstName" column="firstName" type="string"/>
+        <property name="lastName" column="lastName" type="string"/>
+
+        <set name="skills" cascade="save-update" table="devSkill" lazy="false">
+            <key column="devId" />
+            <many-to-many column="skillId" class="org.crud.model.Skill"/>
+        </set>
+        <many-to-one name="specialty" column="specialtyId" not-null="true" lazy="false" unique="true"
+                     class="org.crud.model.Specialty" />
+
+        <property name="Status" column="statusId" type="">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">org.crud.model.Status</param>
+            </type>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,8 +1,18 @@
 package org.crud.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "skill")
 public class Skill {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "statusId")
+    @Enumerated(EnumType.ORDINAL)
     private Status status = Status.ACTIVE;
 
     public Skill() {

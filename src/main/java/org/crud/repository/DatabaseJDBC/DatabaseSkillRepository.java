@@ -1,7 +1,6 @@
-package org.crud.repository.Database;
+package org.crud.repository.DatabaseJDBC;
 
 import org.crud.model.Skill;
-import org.crud.model.Specialty;
 import org.crud.repository.SkillRepository;
 
 import java.sql.ResultSet;

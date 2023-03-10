@@ -1,4 +1,4 @@
-package org.crud.repository.Database;
+package org.crud.repository.DatabaseJDBC;
 
 import org.crud.model.Specialty;
 import org.crud.repository.SpecialtyRepository;
@@ -47,7 +47,7 @@ public class DatabaseSpecialtyRepository implements SpecialtyRepository {
 
     @Override
     public Specialty save(Specialty specialty) {
-        String sql = "INSERT INTO specialty(name) values(\"" + specialty.getName() + "\")";
+        String sql = "INSERT INTO specialty(name) values(\"" + specialty.getSpecName() + "\")";
         int updateNumber = 0;
         try {
             updateNumber = dbContext.statement.executeUpdate(sql);
@@ -60,7 +60,7 @@ public class DatabaseSpecialtyRepository implements SpecialtyRepository {
 
     @Override
     public Specialty update(Specialty specialty) {
-        String sql = "UPDATE specialty SET name = \"" + specialty.getName() + "\" WHERE id="+ specialty.getId();
+        String sql = "UPDATE specialty SET name = \"" + specialty.getSpecName() + "\" WHERE id="+ specialty.getId();
         int updateNumber = 0;
         try {
             updateNumber = dbContext.statement.executeUpdate(sql);

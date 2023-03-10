@@ -1,4 +1,4 @@
-package org.crud.repository.Database;
+package org.crud.repository.DatabaseJDBC;
 
 import org.crud.model.Developer;
 import org.crud.model.Skill;
@@ -10,7 +10,9 @@ import org.crud.repository.SpecialtyRepository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class DatabaseDeveloperRepository implements DeveloperRepository {
     DatabaseContext dbContext = DatabaseContext.getDatabaseContext();
@@ -35,7 +37,7 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
         int skillId;
         String skillName;
         int statusId;
-        List<Skill> skills = new ArrayList<>();
+        Set skills = new HashSet();
 
         Specialty specialty;
         try {
@@ -81,7 +83,8 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
                 developerList.add(new Developer(id,firstName,lastName, null, null));
             }
             for (Developer dev: developerList) {
-                List<Skill> skills = skillRepository.getAll().stream().filter(s -> s.getId() == dev.getId()).toList();
+                Set skills = null;
+                //Set skills = skillRepository.getAll().stream().filter(s -> s.getId() == dev.getId()).toList();
                 dev.setSkills(skills);
 
             }
@@ -93,7 +96,7 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
 
     @Override
     public Developer save(Developer developer) {
-        String sql1 = String.format("INSERT INTO developer(firstName,lastName,specialtyId) values(\"%s\",\"%s\",%s)",
+        /*String sql1 = String.format("INSERT INTO developer(firstName,lastName,specialtyId) values(\"%s\",\"%s\",%s)",
                 developer.getFirstName(),
                 developer.getLastName(),
                 developer.getSpecialty().getId()
@@ -116,7 +119,7 @@ public class DatabaseDeveloperRepository implements DeveloperRepository {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-        }
+        }*/
         return developer;
     }
 
