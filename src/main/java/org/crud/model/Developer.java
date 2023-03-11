@@ -16,7 +16,9 @@ public class Developer{
     private String firstName;
     @Column(name = "lastName")
     private String lastName;
+    @ManyToMany
     Set skills;
+    @ManyToOne(cascade = CascadeType.ALL)
     Specialty specialty;
     @Column(name = "statusId")
     @Enumerated(EnumType.ORDINAL)
