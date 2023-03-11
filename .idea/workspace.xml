@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Работа с БД теперь происходит по средствам hibernate, операции crud реализованны">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/model/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/model/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateDeveloperRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

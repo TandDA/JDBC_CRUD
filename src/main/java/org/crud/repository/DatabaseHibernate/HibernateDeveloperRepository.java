@@ -33,7 +33,7 @@ public class HibernateDeveloperRepository implements DeveloperRepository {
         List<Developer> developerList = null;
         try (Session session = hibernateContext.getSession().openSession()) {
             Transaction transaction = session.beginTransaction();
-            developerList = session.createQuery("FROM Developer").list();
+            developerList = session.createQuery("FROM Developer dev JOIN FETCH dev.skills JOIN FETCH dev.specialty").list();
 
             transaction.commit();
             if (session != null && session.isOpen()) {

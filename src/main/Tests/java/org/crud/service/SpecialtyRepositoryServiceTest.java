@@ -29,7 +29,7 @@ class SpecialtyRepositoryServiceTest {
     @Test
     void getById_Not_Null() throws SQLException {
         Specialty specialty = new Specialty();
-        specialty.setName("Java developer");
+        specialty.setSpecName("Java developer");
         specialty.setId(1);
         Mockito.doReturn(specialty).when(specialtyRepository).getById(Mockito.anyInt());
 
