@@ -1,9 +1,7 @@
 package org.crud.service;
 
 import org.crud.model.Skill;
-import org.crud.model.Specialty;
 import org.crud.repository.DatabaseJDBC.DatabaseSkillRepository;
-import org.crud.repository.DatabaseJDBC.DatabaseSpecialtyRepository;
 import org.crud.repository.SkillRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,11 +19,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class SkillRepositoryService {
 
     SkillRepository skillRepository;
-    RepositoryService repositoryService;
+    SkillService skillService;
     @BeforeEach
     void setUp() {
         skillRepository = Mockito.mock(DatabaseSkillRepository.class);
-        repositoryService = new RepositoryService(skillRepository);
+        skillService = new SkillService(skillRepository);
     }
 
     @Test
@@ -35,13 +33,13 @@ class SkillRepositoryService {
         skill.setId(1);
         Mockito.doReturn(skill).when(skillRepository).getById(1);
 
-        assertEquals(repositoryService.getById(1),skill);
+        assertEquals(skillService.getById(1),skill);
     }
     @Test
     void getById_Is_Null() throws SQLException {
         Mockito.doReturn(null).when(skillRepository).getById(Mockito.anyInt());
 
-        assertEquals(repositoryService.getById(23),null);
+        assertEquals(skillService.getById(23),null);
     }
     @Test
     void getAll_Not_Null() throws SQLException {
@@ -50,40 +48,40 @@ class SkillRepositoryService {
         skills.add(new Skill());
         Mockito.doReturn(skills).when(skillRepository).getAll();
 
-        assertEquals(repositoryService.getAll(),skills);
+        assertEquals(skillService.getAll(),skills);
     }
     @Test
     void getAll_Is_Null() throws SQLException {
         Mockito.doReturn(null).when(skillRepository).getAll();
 
-        assertEquals(repositoryService.getAll(),null);
+        assertEquals(skillService.getAll(),null);
     }
     @Test
     void save_Not_Null() throws SQLException {
         Skill skill = new Skill();
         Mockito.doReturn(skill).when(skillRepository).save(skill);
 
-        assertEquals(repositoryService.save(skill),skill);
+        assertEquals(skillService.save(skill),skill);
     }
     @Test
     void save_Is_Null() throws SQLException {
         Skill skill = null;
         Mockito.doReturn(skill).when(skillRepository).save(skill);
 
-        assertEquals(repositoryService.save(skill),null);
+        assertEquals(skillService.save(skill),null);
     }
     @Test
     void update_Not_Null() throws SQLException {
         Skill skill = new Skill();
         Mockito.doReturn(skill).when(skillRepository).update(skill);
 
-        assertEquals(repositoryService.update(skill),skill);
+        assertEquals(skillService.update(skill),skill);
     }
     @Test
     void update_Is_Null() throws SQLException {
         Skill skill = null;
         Mockito.doReturn(skill).when(skillRepository).update(skill);
 
-        assertEquals(repositoryService.update(skill),null);
+        assertEquals(skillService.update(skill),null);
     }
 }

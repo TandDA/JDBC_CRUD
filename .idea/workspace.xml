@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="Работа с БД теперь происходит по средствам hibernate, операции crud реализованны">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/SpecialtyRepositoryServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateDeveloperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crud/repository/DatabaseHibernate/HibernateDeveloperRepository.java" afterDir="false" />
+    <list default="true" id="9f09c767-f7bc-49b2-bfa5-e8aa6125a336" name="Changes" comment="JOIN FETCH для вытягивания данных">
+      <change beforePath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/DeveloperRepositoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/java/org/crud/service/DeveloperRepositoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678481108556</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="JOIN FETCH для вытягивания данных">
+      <created>1678515900972</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678515900972</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +189,8 @@
     <MESSAGE value="Сервисы теперь между контроллерами и репозиторями" />
     <MESSAGE value="Нужные зависимости + пример миграции" />
     <MESSAGE value="Работа с БД теперь происходит по средствам hibernate, операции crud реализованны" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с БД теперь происходит по средствам hibernate, операции crud реализованны" />
+    <MESSAGE value="JOIN FETCH для вытягивания данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="JOIN FETCH для вытягивания данных" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
